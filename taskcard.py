@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'C:\Users\igorx\PycharmProjects\Yandex_Project\.venv\card_widget.ui'
+# Form implementation generated from reading ui file 'C:\Users\Игорь\PycharmProjects\Yandex_Projec\card_widget.ui'
 #
 # Created by: PyQt6 UI code generator 6.10.0
 #
@@ -12,7 +12,19 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(697, 335)
+        Form.resize(697, 422)
+        Form.setStyleSheet("\n"
+"QRadioButton::indicator {\n"
+"    width: 15px;\n"
+"    height:15px;\n"
+"    border:1px solid black;\n"
+"    border-radius: 8px;\n"
+"    background: white;\n"
+"}\n"
+"QRadioButton::indicator:checked{\n"
+"    background: orange;\n"
+"    border: 1px solid #666666;\n"
+"}")
         self.taskCard = QtWidgets.QFrame(parent=Form)
         self.taskCard.setGeometry(QtCore.QRect(10, 10, 671, 311))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Preferred)
@@ -28,7 +40,7 @@ class Ui_Form(object):
         self.taskCard.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.taskCard.setObjectName("taskCard")
         self.verticalLayoutWidget_3 = QtWidgets.QWidget(parent=self.taskCard)
-        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(20, 10, 641, 291))
+        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(20, 10, 641, 329))
         self.verticalLayoutWidget_3.setObjectName("verticalLayoutWidget_3")
         self.taskCard_2 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_3)
         self.taskCard_2.setContentsMargins(0, 0, 0, 0)
@@ -39,6 +51,18 @@ class Ui_Form(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.topWidget.sizePolicy().hasHeightForWidth())
         self.topWidget.setSizePolicy(sizePolicy)
+        self.topWidget.setStyleSheet("\n"
+"QRadioButton::indicator {\n"
+"    width: 15px;\n"
+"    height:15px;\n"
+"    border:1px solid black;\n"
+"    border-radius: 8px;\n"
+"    background: white;\n"
+"}\n"
+"QRadioButton::indicator:checked{\n"
+"    background: orange;\n"
+"    border: 1px solid #666666;\n"
+"}")
         self.topWidget.setObjectName("topWidget")
         self.horizontalLayout_6 = QtWidgets.QHBoxLayout(self.topWidget)
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
@@ -53,13 +77,98 @@ class Ui_Form(object):
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
         self.date = QtWidgets.QLabel(parent=self.topWidget)
-        self.date.setMinimumSize(QtCore.QSize(278, 0))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.date.sizePolicy().hasHeightForWidth())
+        self.date.setSizePolicy(sizePolicy)
+        self.date.setMinimumSize(QtCore.QSize(150, 0))
         self.date.setMaximumSize(QtCore.QSize(200, 200))
         self.date.setObjectName("date")
-        self.horizontalLayout_5.addWidget(self.date, 0, QtCore.Qt.AlignmentFlag.AlignLeft)
-        self.priority = QtWidgets.QLabel(parent=self.topWidget)
-        self.priority.setObjectName("priority")
-        self.horizontalLayout_5.addWidget(self.priority)
+        self.horizontalLayout_5.addWidget(self.date)
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.Priority_2 = QtWidgets.QLabel(parent=self.topWidget)
+        self.Priority_2.setStyleSheet("color: #898c95;\n"
+"font-size: 18px;")
+        self.Priority_2.setObjectName("Priority_2")
+        self.verticalLayout_2.addWidget(self.Priority_2)
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.priorButton_5 = QtWidgets.QRadioButton(parent=self.topWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(24)
+        sizePolicy.setVerticalStretch(24)
+        sizePolicy.setHeightForWidth(self.priorButton_5.sizePolicy().hasHeightForWidth())
+        self.priorButton_5.setSizePolicy(sizePolicy)
+        self.priorButton_5.setFocusPolicy(QtCore.Qt.FocusPolicy.StrongFocus)
+        self.priorButton_5.setContextMenuPolicy(QtCore.Qt.ContextMenuPolicy.PreventContextMenu)
+        self.priorButton_5.setStyleSheet("")
+        self.priorButton_5.setText("")
+        self.priorButton_5.setObjectName("priorButton_5")
+        self.buttonGroup = QtWidgets.QButtonGroup(Form)
+        self.buttonGroup.setObjectName("buttonGroup")
+        self.buttonGroup.setExclusive(False)
+        self.buttonGroup.addButton(self.priorButton_5)
+        self.horizontalLayout_4.addWidget(self.priorButton_5)
+        self.priorButton_6 = QtWidgets.QRadioButton(parent=self.topWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(24)
+        sizePolicy.setVerticalStretch(24)
+        sizePolicy.setHeightForWidth(self.priorButton_6.sizePolicy().hasHeightForWidth())
+        self.priorButton_6.setSizePolicy(sizePolicy)
+        self.priorButton_6.setFocusPolicy(QtCore.Qt.FocusPolicy.StrongFocus)
+        self.priorButton_6.setContextMenuPolicy(QtCore.Qt.ContextMenuPolicy.PreventContextMenu)
+        self.priorButton_6.setStyleSheet("")
+        self.priorButton_6.setText("")
+        self.priorButton_6.setObjectName("priorButton_6")
+        self.buttonGroup.addButton(self.priorButton_6)
+        self.horizontalLayout_4.addWidget(self.priorButton_6)
+        self.priorButton_7 = QtWidgets.QRadioButton(parent=self.topWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(24)
+        sizePolicy.setVerticalStretch(24)
+        sizePolicy.setHeightForWidth(self.priorButton_7.sizePolicy().hasHeightForWidth())
+        self.priorButton_7.setSizePolicy(sizePolicy)
+        self.priorButton_7.setMouseTracking(False)
+        self.priorButton_7.setFocusPolicy(QtCore.Qt.FocusPolicy.StrongFocus)
+        self.priorButton_7.setContextMenuPolicy(QtCore.Qt.ContextMenuPolicy.PreventContextMenu)
+        self.priorButton_7.setStyleSheet("")
+        self.priorButton_7.setText("")
+        self.priorButton_7.setObjectName("priorButton_7")
+        self.buttonGroup.addButton(self.priorButton_7)
+        self.horizontalLayout_4.addWidget(self.priorButton_7)
+        self.priorButton_8 = QtWidgets.QRadioButton(parent=self.topWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(24)
+        sizePolicy.setVerticalStretch(24)
+        sizePolicy.setHeightForWidth(self.priorButton_8.sizePolicy().hasHeightForWidth())
+        self.priorButton_8.setSizePolicy(sizePolicy)
+        self.priorButton_8.setFocusPolicy(QtCore.Qt.FocusPolicy.StrongFocus)
+        self.priorButton_8.setContextMenuPolicy(QtCore.Qt.ContextMenuPolicy.PreventContextMenu)
+        self.priorButton_8.setStyleSheet("")
+        self.priorButton_8.setText("")
+        self.priorButton_8.setObjectName("priorButton_8")
+        self.buttonGroup.addButton(self.priorButton_8)
+        self.horizontalLayout_4.addWidget(self.priorButton_8)
+        self.priorButton_9 = QtWidgets.QRadioButton(parent=self.topWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(24)
+        sizePolicy.setVerticalStretch(24)
+        sizePolicy.setHeightForWidth(self.priorButton_9.sizePolicy().hasHeightForWidth())
+        self.priorButton_9.setSizePolicy(sizePolicy)
+        self.priorButton_9.setFocusPolicy(QtCore.Qt.FocusPolicy.StrongFocus)
+        self.priorButton_9.setContextMenuPolicy(QtCore.Qt.ContextMenuPolicy.PreventContextMenu)
+        self.priorButton_9.setStyleSheet("")
+        self.priorButton_9.setText("")
+        self.priorButton_9.setObjectName("priorButton_9")
+        self.buttonGroup.addButton(self.priorButton_9)
+        self.horizontalLayout_4.addWidget(self.priorButton_9)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_4)
+        self.horizontalLayout_5.addLayout(self.verticalLayout_2)
+        self.difficulty_level = QtWidgets.QLabel(parent=self.topWidget)
+        self.difficulty_level.setObjectName("difficulty_level")
+        self.horizontalLayout_5.addWidget(self.difficulty_level)
         self.verticalLayout_4.addLayout(self.horizontalLayout_5)
         self.progressBar = QtWidgets.QProgressBar(parent=self.topWidget)
         self.progressBar.setStyleSheet("QProgressBar {\n"
@@ -90,7 +199,7 @@ class Ui_Form(object):
         self.importantButton.setStyleSheet("background-color: #121116;")
         self.importantButton.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("C:\\Users\\igorx\\PycharmProjects\\Yandex_Project\\.venv\\icons/dark_theme/star-line.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("C:\\Users\\Игорь\\PycharmProjects\\Yandex_Projec\\icons/dark_theme/star-line.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.importantButton.setIcon(icon)
         self.importantButton.setIconSize(QtCore.QSize(24, 24))
         self.importantButton.setObjectName("importantButton")
@@ -107,7 +216,7 @@ class Ui_Form(object):
         self.editButton.setStyleSheet("background-color: #121116;")
         self.editButton.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("C:\\Users\\igorx\\PycharmProjects\\Yandex_Project\\.venv\\icons/edit_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("C:\\Users\\Игорь\\PycharmProjects\\Yandex_Projec\\icons/edit_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.editButton.setIcon(icon1)
         self.editButton.setIconSize(QtCore.QSize(24, 24))
         self.editButton.setObjectName("editButton")
@@ -126,7 +235,7 @@ class Ui_Form(object):
         self.deleteButton.setStyleSheet("background-color: #121116;")
         self.deleteButton.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("C:\\Users\\igorx\\PycharmProjects\\Yandex_Project\\.venv\\icons/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon2.addPixmap(QtGui.QPixmap("C:\\Users\\Игорь\\PycharmProjects\\Yandex_Projec\\icons/delete_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.deleteButton.setIcon(icon2)
         self.deleteButton.setIconSize(QtCore.QSize(24, 24))
         self.deleteButton.setObjectName("deleteButton")
@@ -143,7 +252,7 @@ class Ui_Form(object):
         self.next_button.setStyleSheet("background-color: #121116;")
         self.next_button.setText("")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("C:\\Users\\igorx\\PycharmProjects\\Yandex_Project\\.venv\\icons/arrow_back_ios_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon3.addPixmap(QtGui.QPixmap("C:\\Users\\Игорь\\PycharmProjects\\Yandex_Projec\\icons/arrow_back_ios_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.next_button.setIcon(icon3)
         self.next_button.setIconSize(QtCore.QSize(24, 24))
         self.next_button.setCheckable(True)
@@ -174,7 +283,7 @@ class Ui_Form(object):
         self.pushButton_8.setStyleSheet("background-color: #121116;")
         self.pushButton_8.setText("")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("C:\\Users\\igorx\\PycharmProjects\\Yandex_Project\\.venv\\icons/dark_theme/add_72dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon4.addPixmap(QtGui.QPixmap("C:\\Users\\Игорь\\PycharmProjects\\Yandex_Projec\\icons/dark_theme/add_72dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_8.setIcon(icon4)
         self.pushButton_8.setIconSize(QtCore.QSize(24, 24))
         self.pushButton_8.setObjectName("pushButton_8")
@@ -215,7 +324,8 @@ class Ui_Form(object):
         self.title.setText(_translate("Form", "TextLabel"))
         self.description.setText(_translate("Form", "TextLabel"))
         self.date.setText(_translate("Form", "TextLabel"))
-        self.priority.setText(_translate("Form", "TextLabel"))
+        self.Priority_2.setText(_translate("Form", "Приоритет"))
+        self.difficulty_level.setText(_translate("Form", "TextLabel"))
         self.label_4.setText(_translate("Form", "Подзадачи"))
         self.label_9.setText(_translate("Form", "TextLabel"))
 

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>618</width>
-    <height>600</height>
+    <height>767</height>
    </rect>
   </property>
   <property name="focusPolicy">
@@ -31,7 +31,7 @@ QWidget#Form {
      <x>90</x>
      <y>60</y>
      <width>441</width>
-     <height>461</height>
+     <height>541</height>
     </rect>
    </property>
    <property name="whatsThis">
@@ -65,7 +65,7 @@ QRadioButton::indicator {
 }
 QRadioButton::indicator:checked{
 	background: orange;
-	border: 2px solid #666666;
+	border: 1px solid #666666;
 }</string>
    </property>
    <property name="frameShape">
@@ -122,24 +122,29 @@ QRadioButton::indicator:checked{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #14141c;
+     <string notr="true">QPlainTextEdit{
+background-color: #14141c;
 font-size: 18px;
 color: #898c95;
 border-radius: 10px;
 border: 1px solid rgba(255,255,255,0.3);
-</string>
+}
+QPlainTextEdit:focus {
+	border: 2px solid rgb(96, 74, 237);
+	outline: 2px solid rgba(127,90,240, 0.20)
+}</string>
     </property>
     <property name="placeholderText">
      <string>Описание задачи</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>320</y>
       <width>191</width>
-      <height>49</height>
+      <height>50</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -285,13 +290,13 @@ font-size: 18px;</string>
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>240</y>
       <width>381</width>
-      <height>68</height>
+      <height>70</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -318,7 +323,7 @@ font-size: 18px;</string>
          </property>
          <property name="icon">
           <iconset>
-           <normaloff>../../../Downloads/calendar-event-line (3).png</normaloff>../../../Downloads/calendar-event-line (3).png</iconset>
+           <normaloff>icons/dark_theme/calendar-event-line.png</normaloff>icons/dark_theme/calendar-event-line.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -335,13 +340,13 @@ font-size: 18px;</string>
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>380</y>
       <width>201</width>
-      <height>50</height>
+      <height>57</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -359,12 +364,16 @@ font-size: 18px;</string>
      <item>
       <widget class="QComboBox" name="comboBox">
        <property name="styleSheet">
-        <string notr="true">QCombobox {
+        <string notr="true">QComboBox {
 	background-color: #12121a;
 	font-size: 18px;
 	color: #898c95;
 	border-radius: 8px;
 	border: 1px solid rgba(255,255,255,0.3);
+}
+
+QComboBox QAbstarctItemView {
+	background: black;
 }
 QComboBox:on {
 	border: 2px solid rgb(96, 74, 237);
@@ -397,11 +406,67 @@ QComboBox:focus {
      </item>
     </layout>
    </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>470</y>
+      <width>291</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: rgb(96, 74, 237);
+border-radius:16px;
+border: 1px solid rgba(255,255,255,0.3);
+font-size: 20px;</string>
+       </property>
+       <property name="text">
+        <string>Измеить</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_2</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 1px solid rgba(255,255,255,0.3);
+border-radius : 16px ;
+font-size: 20px;</string>
+       </property>
+       <property name="text">
+        <string>Отмена</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_2</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
  </widget>
  <resources/>
  <connections/>
  <buttongroups>
+  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup">
    <property name="exclusive">
     <bool>false</bool>
