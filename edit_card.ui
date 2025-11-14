@@ -169,6 +169,9 @@ font-size: 18px;</string>
            <verstretch>24</verstretch>
           </sizepolicy>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="focusPolicy">
           <enum>Qt::StrongFocus</enum>
          </property>
@@ -193,6 +196,9 @@ font-size: 18px;</string>
            <horstretch>24</horstretch>
            <verstretch>24</verstretch>
           </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="focusPolicy">
           <enum>Qt::StrongFocus</enum>
@@ -219,6 +225,9 @@ font-size: 18px;</string>
            <verstretch>24</verstretch>
           </sizepolicy>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="focusPolicy">
           <enum>Qt::StrongFocus</enum>
          </property>
@@ -244,6 +253,9 @@ font-size: 18px;</string>
            <verstretch>24</verstretch>
           </sizepolicy>
          </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="focusPolicy">
           <enum>Qt::StrongFocus</enum>
          </property>
@@ -268,6 +280,9 @@ font-size: 18px;</string>
            <horstretch>24</horstretch>
            <verstretch>24</verstretch>
           </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="focusPolicy">
           <enum>Qt::StrongFocus</enum>
@@ -315,6 +330,9 @@ font-size: 18px;</string>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <widget class="QPushButton" name="pushButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: #14141c;</string>
          </property>
@@ -424,6 +442,9 @@ QComboBox:focus {
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="styleSheet">
         <string notr="true">background: rgb(96, 74, 237);
 border-radius:16px;
@@ -446,6 +467,9 @@ font-size: 20px;</string>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="styleSheet">
         <string notr="true">border: 1px solid rgba(255,255,255,0.3);
 border-radius : 16px ;
@@ -466,11 +490,11 @@ font-size: 20px;</string>
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup_2"/>
   <buttongroup name="buttonGroup">
    <property name="exclusive">
     <bool>false</bool>
    </property>
   </buttongroup>
+  <buttongroup name="buttonGroup_2"/>
  </buttongroups>
 </ui>

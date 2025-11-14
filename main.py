@@ -9,6 +9,7 @@ class Second(QWidget):
     def __init__(self):
         super().__init__()
         uic.loadUi('edit_card.ui', self)
+        self.nameEdit.setText()
 
 class MainWindow(QMainWindow):
     def __init__(self):

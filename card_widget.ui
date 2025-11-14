@@ -149,6 +149,9 @@ font-size: 18px;</string>
                <layout class="QHBoxLayout" name="horizontalLayout_4">
                 <item>
                  <widget class="QRadioButton" name="priorButton_5">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                     <horstretch>24</horstretch>
@@ -174,6 +177,9 @@ font-size: 18px;</string>
                 </item>
                 <item>
                  <widget class="QRadioButton" name="priorButton_6">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                     <horstretch>24</horstretch>
@@ -199,6 +205,9 @@ font-size: 18px;</string>
                 </item>
                 <item>
                  <widget class="QRadioButton" name="priorButton_7">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                     <horstretch>24</horstretch>
@@ -227,6 +236,9 @@ font-size: 18px;</string>
                 </item>
                 <item>
                  <widget class="QRadioButton" name="priorButton_8">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                     <horstretch>24</horstretch>
@@ -252,6 +264,9 @@ font-size: 18px;</string>
                 </item>
                 <item>
                  <widget class="QRadioButton" name="priorButton_9">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                     <horstretch>24</horstretch>
